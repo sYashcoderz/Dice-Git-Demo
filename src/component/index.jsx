@@ -40,6 +40,7 @@ const GitSearchDemo = () => {
                 ? { ...item, title: inputTodo.title, description: inputTodo.description, status: inputTodo.status || 'pending' }
                 : item
             );
+            setIsUpdate(!isUpdate);
             return updatedList;
             });
             setInputTodo({});
